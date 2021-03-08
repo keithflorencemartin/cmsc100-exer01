@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f6f5f5;
+    margin: 0px;
+}
+
+.header{
+    padding: 1px;
+    text-align: center;
+    background-color: rgb(240, 229, 212);
+    
+}
+
+h1{
+    font-family: georgia;
+    font-weight: bold;
+    font-size: 90px;
+    color: #3e3d3d;
+    text-shadow: 3px 3px rgb(190, 197, 141);
+    text-align: center;
+}
+
+h2{
+    font-family: Andale Mono, monospace;
+    color: #3e3d3d;
+}
+
+h3{
+    font-family: Andale Mono, monospace;
+    font-size: 14px;
+    color: #3e3d3d;
+}
+
+h4{
+    font-family: georgia;
+    font-weight: lighter;
+    font-size: 11px;
+    color: #3e3d3d;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+p{
+    font-family: Andale Mono, monospace;
+    font-weight: lighter;
+    color: #3e3d3d;
+}
+
+table{
+    border-collapse: collapse;
+    border: none;
+    text-align: left;
+    table-layout: auto;
+    width: 300px;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th,td{
+    border: none;
+    font-weight: normal;
+    font-family: Andale Mono, monospace;
+    color: #3e3d3d;
+    padding: 10px;
+}
+
+ul{
+    margin: 0;
+    padding: 0px;
+    list-style-type: circle;
+}
+
+ol{
+    font-family: Andale Mono, monospace;
+    color: #3e3d3d;
+    margin: auto;
+    list-style-type: decimal;
+}
+
+.row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.side{
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: rgb(190, 197, 141);
+    padding: 24px;
+}
+
+.main{
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: rgb(233, 198, 132);
+    padding: 20px;
+}
+
+.card{
+    background-color: rgb(255, 244, 228);
+    padding: 20px;
+    margin-top: 20px;
+    border-style: dashed;
+}
+
+.footer{
+    padding: 10px;
+    text-align: center;
+    background: rgb(240, 229, 212);
+}
+
+@media screen and (max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
